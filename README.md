@@ -19,9 +19,8 @@ AI-First Software Engineer with 5+ years of experience building and modernizing 
 - 🗄️ **Multi-TB database cleanup** across distributed systems (100% uptime maintained)
 - ⚡ **58% API performance improvement** through architectural modernization
 
+### 📥 [Download Resume (PDF)](Abdul_Samad_Resume.pdf)
 ### 💼 [View Full Portfolio](Portfolio.md)
-
-Detailed project descriptions, technical skills, certifications, and more.
 
 ---
 
@@ -68,10 +67,6 @@ Detailed project descriptions, technical skills, certifications, and more.
 - 🗄️ **Multi-TB database cleanup** maintaining 100% uptime
 - ⚡ **58% API performance improvement** through architectural modernization
 - 📚 **15+ top-selling courses** helping thousands of developers
-
----
-
-
 
 ---
 
