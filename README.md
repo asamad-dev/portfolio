@@ -1,110 +1,63 @@
-# Abdul Samad Irfan - Software Engineer
+# Hi, I'm Abdul Samad 👋
 
-**Full-Stack Engineer** | AI/LLM Applications | Backend & Cloud Systems | 5+ Years
+**Backend Software Engineer** • 5+ years • C#/.NET & Python • Fintech & SaaS
 
-[![Location](https://img.shields.io/badge/Location-St._Julian's,_Malta-0077B5?style=flat&logo=map-pin&logoColor=white)](https://www.google.com/maps/place/St.+Julian%27s,+Malta)  [![Email](https://img.shields.io/badge/Email-samad6846@gmail.com-181717?style=flat&logo=gmail&logoColor=black)](mailto:samad6846@gmail.com)
+[![Email](https://img.shields.io/badge/Email-samad6846@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:samad6846@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/abdul-samad-irfan)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/asamad-dev)
+[![Location](https://img.shields.io/badge/📍_Malta_(EU_timezone)-grey?style=flat)]()
 
 ---
 
-## 👋 About Me
+## 🧑‍ About
 
-AI-First Software Engineer with 5+ years of experience building and modernizing cloud-based backend systems across **social media, fintech, SaaS, and energy sectors**. Proven track record of delivering significant business impact through platform modernization, cost optimization, and scalable distributed systems.
+I build and modernize backend systems at scale. Most recently I saved **$358K/year** in AWS costs at Trilogy and modernized **150+ .NET services** to .NET 8 at JPMorgan — both with zero downtime. I also build production AI workflows with Python and LLMs.
 
-**Recent Highlights:**
-- 💰 **$358K+ annual AWS cost savings** through data-driven infrastructure optimization
-- 🚀 **150+ backend services** modernized from .NET Framework to .NET 8 (zero downtime)
-- 📦 **375 repositories** standardized post-acquisition (60% fewer deployment errors)
-- 🗄️ **Multi-TB database cleanup** across distributed systems (100% uptime maintained)
-- ⚡ **58% API performance improvement** through architectural modernization
-
-### 📥 [Download Resume (PDF)](Abdul_Samad_Resume.pdf)
-### 💼 [View Full Portfolio](Portfolio.md)
+📄 [**Resume (PDF)**](Abdul_Samad_Resume.pdf) · 📋 [**Full Portfolio & Case Studies**](Portfolio.md)
 
 ---
 
-## 🛠️ Core Technologies
+## 🏆 Career Highlights
 
-**Languages:** C# • Python • JavaScript/TypeScript • Java • SQL  
-**Backend:** .NET 8 • ASP.NET Core • FastAPI • Django • Node.js • Spring  
-**Cloud:** AWS (EC2, ECS, EMR, RDS, Lambda, S3) • Azure  
-**Databases:** MySQL/Aurora • Cassandra • Elasticsearch • Redis • MongoDB  
-**DevOps:** Docker • Kubernetes • Terraform • Jenkins • GitHub Actions  
-**AI/ML:** LangChain • Pinecone • HuggingFace • Gemini • Claude • LLMs  
-**Message Queues:** Apache Kafka • RabbitMQ • AWS SQS
+- � **$358K/year AWS savings** — 44 accounts, 3 regions, zero service disruption
+- � **150+ .NET services modernized** — .NET Framework → .NET 8, zero downtime
+- ⚡ **58% API performance gain** — WCF → Web API + MessagePack + async
+- 🗄️ **74M+ documents purged** — distributed deletion across 9 clusters, zero data loss
+- 📦 **375 repositories standardized** — 60% fewer deployment errors, onboarding 4 weeks → 1
 
 ---
 
-## 💼 Professional Experience
+## 🛠️ Tech Stack
 
-**AI-First Software Engineer II** | Trilogy (Crossover) | *May 2025 - January 2026*
-- Led Khoros platform integration: standardized 375 repositories post-acquisition
-- Executed multi-TB data purge across distributed databases (MySQL, Cassandra, Elasticsearch)
-- Achieved $358K+ annual AWS cost savings through infrastructure optimization
-
-**Software Developer** | JPMorgan Chase & Co | *March 2023 - March 2025*
-- Modernized 150+ backend services from .NET Framework to .NET 8
-- Improved API performance by 58% through MessagePack serialization
-- Implemented event-driven architecture with Apache Kafka
-
-**Senior Technical Content Engineer** | Educative | *January 2022 - June 2023*
-- Created 15+ top-selling interactive programming courses
-- Dockerized 10+ technology stacks for cloud labs
-- Built CI/CD pipeline for automated lab deployments
-
-**Engineer** | Tricon Boston Consulting | *December 2020 - January 2022*
-- Developed predictive maintenance models for 120 wind turbines
-- Built real-time monitoring dashboard for government oversight
+**Languages:** C# · Python · JavaScript/TypeScript · Java
+**Backend:** .NET · Web API · FastAPI · microservices · distributed systems
+**Data:** SQL Server · MySQL/Aurora · Cassandra · Elasticsearch · Redis
+**Cloud:** AWS (EC2, ECS, Lambda, S3, CloudWatch) · Azure (Entra ID, DevOps)
+**DevOps:** Docker · Kubernetes · Terraform · TeamCity · Jenkins · GitHub Actions · Datadog
+**Messaging:** Apache Kafka · RabbitMQ
+**Security:** OAuth 2.0 · JWT · SSO · RBAC · PingFederate
+**AI Tooling:** Cursor · Windsurf · Claude · LangChain · Gemini · MCP
 
 ---
 
-## 🚀 Key Achievements
+## 🔭 Currently
 
-- 💰 **$358K+ annual AWS savings** across 44 accounts (EMR, EBS, network optimization)
-- 🚀 **150+ services** modernized to .NET 8 with zero downtime
-- 📦 **375 repositories** standardized (60% fewer deployment errors)
-- 🗄️ **Multi-TB database cleanup** maintaining 100% uptime
-- ⚡ **58% API performance improvement** through architectural modernization
-- 📚 **15+ top-selling courses** helping thousands of developers
+- 🤖 Building AI-powered automation tools with **Gemini**, **LangChain**, and **FastAPI**
+- 📚 Working towards **AWS** and **Azure** certifications
+- 🔍 Open to **remote backend/platform engineering** roles (B2B contract or full-time)
 
 ---
 
-## 🎓 Education & Certifications
+## 📝 Note
 
-**B.Sc. Electrical Engineering** - University of Engineering and Technology Lahore (3.5/4.0 CGPA)
-
-**Certifications:**
-- Google: Intro to Generative AI, Data Analytics
-- IBM: Databases and SQL for Data Science
-- University of Michigan: Python Programming (3 courses)
-- National Instruments: Certified LabVIEW Associate Developer
-- MathWorks: MATLAB & Simulink Onramp
-
-**Leadership:**
-- IEEE Speaker | IET Senior Executive & Vice Head | Sports Week Head at UET
+🔒 Enterprise work (JPMorgan, Trilogy, Educative) is under NDA — the [Portfolio](Portfolio.md) covers **architecture, patterns, and business outcomes** without proprietary code. Independent AI projects have full source code.
 
 ---
 
-## 📝 Important Note
+## 📬 Contact
 
-**NDA & Confidentiality:** Due to non-disclosure agreements with enterprise clients (JPMorgan Chase, Trilogy/Crossover, Educative), this portfolio focuses on **technical approaches, architectural patterns, and quantifiable business outcomes** rather than proprietary code or confidential business logic. All project descriptions represent actual work delivered in production environments.
-
-**Code Samples:** Independent AI projects contain actual implementation code, while enterprise projects emphasize architecture and methodology.
+📧 [samad6846@gmail.com](mailto:samad6846@gmail.com) · 💼 [LinkedIn](https://linkedin.com/in/abdul-samad-irfan) · 🐙 [GitHub](https://github.com/asamad-dev)
 
 ---
 
-## 📬 Get In Touch
-
-I'm open to discussing:
-- Backend engineering and cloud infrastructure roles
-- AI/ML integration and LLM applications
-- System design and architecture consultation
-- Technical content creation and developer education
-
-**Email:** samad6846@gmail.com  
-**LinkedIn:** [linkedin.com/in/abdul-samad-irfan](https://linkedin.com/in/abdul-samad-irfan)
-
----
-
-*Last Updated: February 2026*
+*Last updated: February 2026*
