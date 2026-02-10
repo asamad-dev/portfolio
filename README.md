@@ -19,8 +19,8 @@ I build and modernize backend systems at scale. Most recently I saved **$358K/ye
 
 ## 🏆 Career Highlights
 
-- � **$358K/year AWS savings** — 44 accounts, 3 regions, zero service disruption
-- � **150+ .NET services modernized** — .NET Framework → .NET 8, zero downtime
+- 💰 **$358K/year AWS savings** — 44 accounts, 3 regions, zero service disruption
+- 🔄 **150+ .NET services modernized** — .NET Framework → .NET 8, zero downtime
 - ⚡ **58% API performance gain** — WCF → Web API + MessagePack + async
 - 🗄️ **74M+ documents purged** — distributed deletion across 9 clusters, zero data loss
 - 📦 **375 repositories standardized** — 60% fewer deployment errors, onboarding 4 weeks → 1
@@ -29,14 +29,14 @@ I build and modernize backend systems at scale. Most recently I saved **$358K/ye
 
 ## 🛠️ Tech Stack
 
-**Languages:** C# · Python · JavaScript/TypeScript · Java
-**Backend:** .NET · Web API · FastAPI · microservices · distributed systems
-**Data:** SQL Server · MySQL/Aurora · Cassandra · Elasticsearch · Redis
-**Cloud:** AWS (EC2, ECS, Lambda, S3, CloudWatch) · Azure (Entra ID, DevOps)
-**DevOps:** Docker · Kubernetes · Terraform · TeamCity · Jenkins · GitHub Actions · Datadog
-**Messaging:** Apache Kafka · RabbitMQ
-**Security:** OAuth 2.0 · JWT · SSO · RBAC · PingFederate
-**AI Tooling:** Cursor · Windsurf · Claude · LangChain · Gemini · MCP
+💻 **Languages:** C# · Python · JavaScript/TypeScript · Java
+⚙️ **Backend:** .NET · Web API · FastAPI · microservices · distributed systems
+🗄️ **Data:** SQL Server · MySQL/Aurora · Cassandra · Elasticsearch · Redis
+☁️ **Cloud:** AWS (EC2, ECS, Lambda, S3, CloudWatch) · Azure (Entra ID, DevOps)
+🚀 **DevOps:** Docker · Kubernetes · Terraform · TeamCity · Jenkins · GitHub Actions · Datadog
+📨 **Messaging:** Apache Kafka · RabbitMQ
+🔐 **Security:** OAuth 2.0 · JWT · SSO · RBAC · PingFederate
+🤖 **AI Tooling:** Cursor · Windsurf · Claude · LangChain · Gemini · MCP
 
 ---
 
