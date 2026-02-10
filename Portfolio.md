@@ -11,6 +11,8 @@
 
 #### 📦 PROJECT 1: Khoros Platform Integration & CI/CD Standardization
 
+`CI/CD` `DevOps` `backend` `UI` `multi-repo` `Python` `Java` `Node.js` `React` `Docker` `Jenkins` `CircleCI` `Maven` `Gradle` `AWS` `GCP`
+
 📋 **Situation:**
 Following Trilogy's acquisition of Khoros (global customer engagement platform), the engineering team inherited 375 repositories across 4 product lines (Care, Community, Marketing/Spredfast, Flow.AI) with inconsistent documentation, build procedures, and deployment standards. New engineers required 4 weeks to onboard, and deployment errors were frequent due to lack of standardized processes.
 
@@ -37,6 +39,8 @@ Lead the integration and standardization of 375 repositories into Trilogy's infr
 ---
 
 #### 🗑️ PROJECT 2: Twitter Integration Removal — Multi-TB Data Purge
+
+`data-engineering` `distributed-systems` `backend` `UI` `multi-region` `Python` `SQL` `CQL` `Bash` `React` `Angular` `MySQL` `Aurora` `Cassandra` `Elasticsearch` `AWS` `S3` `Boto3` `Selenium` `Jest`
 
 📋 **Situation:**
 Following Twitter's API policy changes, Khoros needed to completely remove Twitter integrations across 4 product lines. This included API decommissioning, UI cleanup across 100+ repositories, and safe deletion of multi-terabyte Twitter datasets from distributed production databases spanning multiple AWS regions.
@@ -147,6 +151,8 @@ graph TD
 ---
 
 #### 💰 PROJECT 3: AWS Cost Optimization — $358K+ Annual Savings
+
+`cost-optimization` `infrastructure` `cloud-architecture` `Python` `Bash` `AWS` `EC2` `EBS` `EMR` `ECS` `Athena` `CloudWatch` `Terraform` `Boto3` `Pandas` `Datadog` `Spark` `Cassandra` `Elasticsearch`
 
 📋 **Situation:**
 AWS infrastructure across 44 accounts and 3 regions (us-west-2, eu-west-1, ap-southeast-2) had accumulated significant waste through outdated instance types, oversized storage, and unused resources. Annual spend exceeded optimal levels by an estimated 30-50%.
@@ -397,6 +403,8 @@ graph TD
 
 #### 🔄 PROJECT: Legacy Fintech Application Modernization
 
+`legacy-modernization` `fintech` `event-driven` `backend` `C#` `.NET-8` `ASP.NET-Core` `Web-API` `WCF` `Python` `Apache-Kafka` `MessagePack` `SQL-Server` `PingFederate` `Azure-Entra-ID` `TeamCity` `OAuth-2.0` `JWT` `SSO` `RBAC`
+
 📋 **Situation:**
 JPMorgan Chase's PortfolioOne application (buy-side trading platform) was running on outdated .NET Framework 4.5.2 with WCF services, creating security vulnerabilities, performance bottlenecks, and maintenance challenges. The application served institutional traders requiring high availability and millisecond-level responsiveness.
 
@@ -444,6 +452,8 @@ graph LR
 
 #### 🎓 PROJECT: Interactive Programming Platform & Cloud Labs
 
+`content-platform` `cloud-labs` `backend` `UI` `Docker` `Kubernetes` `Python` `C#` `Java` `.NET` `Django` `Flask` `FastAPI` `React` `MongoDB` `Kafka` `DigitalOcean` `CI/CD` `MERN` `MEAN`
+
 📋 **Situation:**
 Educative, an interactive learning platform, needed to scale its content offerings with hands-on programming projects and browser-based development environments to support thousands of learners preparing for FAANG interviews and learning modern technology stacks.
 
@@ -482,6 +492,8 @@ Create top-selling interactive programming projects covering software engineerin
 
 #### 🌬️ PROJECT: Wind Turbine Performance Optimization & Predictive Maintenance
 
+`IoT` `energy` `predictive-maintenance` `data-analysis` `simulation` `backend` `UI` `Python` `MATLAB` `.NET` `JavaScript`
+
 📋 **Situation:**
 Wind farm with 120 turbines in Pakistan's Jhimpir wind corridor needed to maximize electricity generation, minimize downtime, and optimize maintenance scheduling to improve operational efficiency and ROI.
 
@@ -508,6 +520,8 @@ Develop predictive maintenance models for early fault detection, analyze vortex 
 
 ### 🏦 AI-Assisted Bank Reconciliation System
 **2025**
+
+`AI` `LLM` `full-stack` `fintech` `automation` `backend` `UI` `Python` `FastAPI` `React` `Gemini` `LangChain` `Pinecone` `HuggingFace` `AWS` `Docker` `NGINX` `GitHub-Actions` `OCR`
 
 📋 **Situation:**
 Bookkeeping company managing trucking companies needed automated solution to process PDF bank statements from multiple banks, categorize transactions, and export reconciled data—a process taking hours of manual work per client.
@@ -545,6 +559,8 @@ graph LR
 
 ### 🚛 IFTA DriverPacket Processing System
 **2025**
+
+`AI` `OCR` `GIS` `automation` `compliance` `backend` `Python` `FastAPI` `Gemini` `HERE-Maps` `AWS` `S3` `Docker` `GitHub-Actions` `EC2`
 
 📋 **Situation:**
 Trucking companies needed to convert driver packet images and route CSVs into structured IFTA reports for state-by-state fuel tax compliance—a manual, error-prone process taking days per filing.
