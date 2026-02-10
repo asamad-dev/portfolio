@@ -1,39 +1,23 @@
-# Abdul Samad Irfan - Software Engineer Portfolio
+# 📂 Portfolio — Project Case Studies
 
-[![Location](https://img.shields.io/badge/Location-St._Julian's,_Malta-0077B5?style=flat&logo=map-pin&logoColor=white)](https://www.google.com/maps/place/St.+Julian%27s,+Malta)  [![Email](https://img.shields.io/badge/Email-samad6846@gmail.com-181717?style=flat&logo=gmail&logoColor=black)](mailto:samad6846@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/abdul-samad-irfan)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/asamad-dev)
----
-
-## Professional Summary
-
-AI-First Software Engineer with 5+ years of experience building and modernizing cloud-based backend systems across fintech, SaaS, and energy sectors. Proven track record of delivering significant business impact through platform modernization, cost optimization, and scalable distributed systems. Expertise in C#/.NET, Python, microservices architecture, and AWS cloud infrastructure. Recently delivered $358K+ annual cloud savings while maintaining 100% uptime across production systems.
-
-**Core Competencies:**
-- Backend Engineering: .NET 8, Python, C#, Java, microservices, distributed systems
-- Cloud Infrastructure: AWS (EC2, ECS, EMR, RDS/Aurora, Lambda, VPC), Azure (Entra ID)
-- Data Systems: MySQL/Aurora, Cassandra, Elasticsearch, Redis, SQL Server
-- DevOps/CI/CD: Docker, Kubernetes, Terraform, Jenkins, CircleCI, TeamCity, GitHub Actions
-- AI-First Development: Cursor, Windsurf, Claude, MCP, Agentic workflows, LLMs
-- Message Queues: Apache Kafka, RabbitMQ, AWS SQS
-- Security: OAuth 2.0, JWT, RBAC, SSO, PingFederate, Okta, Azure Entra ID
+> Detailed breakdowns of production work. For a quick overview, see the [README](README.md). For the resume, [download PDF](Abdul_Samad_Resume.pdf).
 
 ---
 
-## Work Experience
+## 💼 Work Experience
 
-### AI-First Software Engineer II | Trilogy (Contractor - Remote)
+### 🏢 AI-First Software Engineer II | Trilogy (Contractor - Remote)
 **May 2025 - January 2026**
 
-#### PROJECT 1: Khoros Platform Integration & CI/CD Standardization
+#### 📦 PROJECT 1: Khoros Platform Integration & CI/CD Standardization
 
-**Situation:**
+📋 **Situation:**
 Following Trilogy's acquisition of Khoros (global customer engagement platform), the engineering team inherited 375 repositories across 4 product lines (Care, Community, Marketing/Spredfast, Flow.AI) with inconsistent documentation, build procedures, and deployment standards. New engineers required 4 weeks to onboard, and deployment errors were frequent due to lack of standardized processes.
 
-**Task:**
+🎯 **Task:**
 Lead the integration and standardization of 375 repositories into Trilogy's infrastructure, creating comprehensive documentation, establishing CI/CD workflows, and enabling the engineering team to work confidently across the entire platform.
 
-**Actions:**
+⚡ **Actions:**
 - Analyzed and documented 375 repositories spanning diverse technology stacks (Java/Maven backends, Node.js services, React frontends, Python automation)
 - Standardized CI/CD pipelines using Jenkins and CircleCI for automated deployments across AWS and GCP
 - Created comprehensive deployment runbooks for multi-environment setups (Dev → QA → Staging → Production)
@@ -41,26 +25,35 @@ Lead the integration and standardization of 375 repositories into Trilogy's infr
 - Documented build procedures using Maven, Gradle, npm, and Webpack
 - Established Git workflows and version control standards across all product lines
 
-**Result:**
+✅ **Result:**
 - Reduced new engineer onboarding time from **4 weeks to 1 week**
 - Reduced deployment errors by **60%** through consistent runbooks and automation
 - Successfully standardized 375 repositories with comprehensive documentation
 - Enabled Trilogy team to confidently work across entire platform
 - Provided foundation for all future integration initiatives
 
-**Technologies:** Jenkins, CircleCI, Git, Maven, Gradle, npm, Docker, Python, Java, Node.js, React, AWS, GCP
+🛠️ **Technologies:** Jenkins, CircleCI, Git, Maven, Gradle, npm, Docker, Python, Java, Node.js, React, AWS, GCP
 
 ---
 
-#### PROJECT 2: Twitter Integration Removal - Multi-TB Data Purge
+#### 🗑️ PROJECT 2: Twitter Integration Removal — Multi-TB Data Purge
 
-**Situation:**
+📋 **Situation:**
 Following Twitter's API policy changes, Khoros needed to completely remove Twitter integrations across 4 product lines. This included API decommissioning, UI cleanup across 100+ repositories, and safe deletion of multi-terabyte Twitter datasets from distributed production databases spanning multiple AWS regions.
 
-**Task:**
+🎯 **Task:**
 Execute complete removal of Twitter integrations while maintaining 100% uptime, zero data loss for non-Twitter data, and ensuring no customer-facing disruptions across the global platform.
 
-**High-Level Summary:**
+```mermaid
+graph TD
+    A["📋 Phase 1: Analysis & Discovery"] --> B["🛠️ Phase 2: Tool Development"]
+    B --> C["🚀 Phase 3: Safe Deletion"]
+    A -.- A1["9 MySQL DBs + 9 ES Clusters\n700M+ docs analyzed"]
+    B -.- B1["12+ Python tools\nS3-backed safety + rollback"]
+    C -.- C1["74M docs deleted\n100+ UI repos cleaned\nZero downtime"]
+```
+
+📊 **High-Level Summary:**
 - **Analyzed:** 9 MySQL databases + 9 Elasticsearch clusters (700M+ documents, 355+ indices)
 - **Discovered:** ~74M Twitter documents (17.9M streamitems + 56.1M calendar)
 - **Built:** 12+ Python analysis & deletion tools with S3-backed safety architecture
@@ -70,7 +63,7 @@ Execute complete removal of Twitter integrations while maintaining 100% uptime, 
 <details>
 <summary><b>📋 Click to expand: Phase 1 - Analysis & Discovery</b></summary>
 
-**Actions:**
+⚡ **Actions:**
 - **MySQL Analysis Suite:** Built comprehensive multi-database analysis toolkit analyzing **9 production MySQL databases** (qa22_oltp, qa22_ods, qa22_dataservice, qa22_finex, qa22_gateway, qa22_job, qa22_linktagging, qa22_quartz, qa22_session)
   - Developed intelligent table categorization by size (0, 1-10, 11-100, 101-500, 501-2K, 2K-10K, 10K-50K, 50K-100K, 100K+ rows)
   - Implemented adaptive sampling strategies optimizing query performance by **90%+** using CSV-based analysis
@@ -85,7 +78,7 @@ Execute complete removal of Twitter integrations while maintaining 100% uptime, 
   - Generated **30+ timestamped CSV analysis reports** for cross-cluster insights
   - Built interactive `run_twitter_analysis.py` orchestrator with menu-driven workflow
 
-**Phase Results:**
+📊 **Phase Results:**
 - Analyzed **9 MySQL databases** + **9 Elasticsearch clusters** (**700M+ total documents**)
 - Discovered **~74M Twitter documents** requiring deletion
 - Created **12+ Python analysis tools** with comprehensive reporting
@@ -96,7 +89,7 @@ Execute complete removal of Twitter integrations while maintaining 100% uptime, 
 <details>
 <summary><b>🛠️ Click to expand: Phase 2 - Tool Development & Safety Architecture</b></summary>
 
-**Actions:**
+⚡ **Actions:**
 - **API Decommissioning:** Identified and disabled all Twitter OAuth flows, API credentials, and authentication modules across Java backend services, Node.js microservices, and Python data pipelines
 - **UI Cleanup:** Removed Twitter branding and functionality from **100+ repositories** (React, Angular, JavaScript/TypeScript) with comprehensive QA using Selenium and Jest
 - **Chunked Deletion Architecture:** Engineered S3-backed chunked deletion system for safe removal:
@@ -110,7 +103,7 @@ Execute complete removal of Twitter integrations while maintaining 100% uptime, 
   - `twitter_deletion_safety_validator.py` - Multi-cluster validation
 - **Documentation:** Created production-grade runbooks (TWITTER_DELETION_RUNBOOK.md, backup strategies, rollback procedures)
 
-**Phase Results:**
+📊 **Phase Results:**
 - Built **12+ production-grade Python tools** with safety-first architecture
 - Established **S3-backed verification** for every deletion chunk
 - Enabled **rollback capability** for emergency recovery
@@ -122,7 +115,7 @@ Execute complete removal of Twitter integrations while maintaining 100% uptime, 
 <details>
 <summary><b>🚀 Click to expand: Phase 3 - Safe Deletion Execution</b></summary>
 
-**Actions:**
+⚡ **Actions:**
 - **MySQL/Aurora Deletion:** Executed batch deletion across **9 databases** using SQL DELETE statements with optimized batch processing to minimize lock contention
 - **Cassandra Deletion:** Removed Twitter data from Cassandra keyspaces using CQL queries with tombstone management for distributed consistency
 - **Elasticsearch Chunked Deletion:** Executed safe deletion of **~74M Twitter documents** using chunked approach:
@@ -132,7 +125,7 @@ Execute complete removal of Twitter integrations while maintaining 100% uptime, 
 - **Production Monitoring:** Monitored deletion progress using AWS CloudWatch metrics, Elasticsearch cluster health, and database performance metrics across 3 AWS regions (us-west-2, eu-west-1, ap-southeast-2)
 - **Phased Rollout:** Coordinated with DBA and SRE teams for incremental production deployment with pause-and-validate strategy
 
-**Phase Results:**
+📊 **Phase Results:**
 - Successfully deleted **~74M Twitter documents** from Elasticsearch with **zero downtime**
 - Removed Twitter data from **9 MySQL databases** and Cassandra clusters with **zero service disruption**
 - Maintained **100% uptime** and **100% data integrity** for non-Twitter data throughout entire project
@@ -140,7 +133,7 @@ Execute complete removal of Twitter integrations while maintaining 100% uptime, 
 
 </details>
 
-**Overall Project Results:**
+🏆 **Overall Project Results:**
 - Successfully eliminated Twitter integrations across **4 product lines** (Care, Community, Spredfast, Flow.AI)
 - Analyzed **700M+ documents** and safely deleted **~74M Twitter documents** from production
 - Cleaned **100+ UI repositories** and decommissioned all Twitter API integrations
@@ -149,19 +142,31 @@ Execute complete removal of Twitter integrations while maintaining 100% uptime, 
 - Eliminated ongoing Twitter API costs and compliance overhead
 - Built reusable **safety-first deletion framework** for future large-scale data purges
 
-**Technologies:** Python, MySQL/Aurora, Cassandra, Elasticsearch (1.x-7.x), AWS (S3, CloudWatch, multi-region), PyMySQL, Boto3, SQL, CQL, React, Angular, JavaScript, TypeScript, Selenium, Jest, CSV analytics, Bash
+🛠️ **Technologies:** Python, MySQL/Aurora, Cassandra, Elasticsearch (1.x-7.x), AWS (S3, CloudWatch, multi-region), PyMySQL, Boto3, SQL, CQL, React, Angular, JavaScript, TypeScript, Selenium, Jest, CSV analytics, Bash
 
 ---
 
-#### PROJECT 3: AWS Cost Optimization - $358K+ Annual Savings
+#### 💰 PROJECT 3: AWS Cost Optimization — $358K+ Annual Savings
 
-**Situation:**
+📋 **Situation:**
 AWS infrastructure across 44 accounts and 3 regions (us-west-2, eu-west-1, ap-southeast-2) had accumulated significant waste through outdated instance types, oversized storage, and unused resources. Annual spend exceeded optimal levels by an estimated 30-50%.
 
-**Task:**
+🎯 **Task:**
 Analyze infrastructure utilization patterns and implement data-driven optimization strategies to reduce AWS costs while maintaining or improving performance and availability.
 
-**High-Level Summary:**
+```mermaid
+graph TD
+    A["🔍 44 AWS Accounts — 3 Regions"] --> EMR["💻 EMR Modernization\n-$220K/yr"]
+    A --> LIA["💾 EBS Rightsizing\n-$122K/yr"]
+    A --> NAT["🌐 NAT Gateway\n-$100K+ target"]
+    A --> ELB["🧹 ELB Cleanup\n-$14K/yr"]
+    EMR --> S["💰 $358K+ Annual Savings"]
+    LIA --> S
+    NAT --> S
+    ELB --> S
+```
+
+📊 **High-Level Summary:**
 - **Analyzed:** 44 AWS accounts across 3 regions (us-west-2, eu-west-1, ap-southeast-2)
 - **Optimized:** 15 EMR clusters, 485 application servers, 7 Cassandra clusters, 90 ELBs
 - **Built:** Python automation tools for CloudWatch, Datadog, Cost Explorer, and VPC Flow Logs analysis
@@ -172,7 +177,7 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 
 **Scope:** 15 EMR clusters across 2 Community Analytics accounts (519148787890, 052386936954)
 
-**Actions:**
+⚡ **Actions:**
 - Analyzed current state: 15 clusters using older generation instances (r5: 61.6%, m5: 31.5%) with $294K annual cost
 - Built Python automation to analyze CloudWatch CPU/memory metrics and Spark workload patterns over 30-day periods
 - Developed migration runbooks following LIA-852 pattern for zero-downtime instance group additions
@@ -182,7 +187,7 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 - Executed phased rollout: test clusters first (3 low-cost), then top 5 high-cost clusters ($84K), then remaining 10
 - Validated YARN metrics, job completion times, and cluster health after each migration
 
-**Results:**
+✅ **Results:**
 - **$220K annual savings** (50% reduction from $294K to $147K)
 - Improved Spark job performance by **35%** through better instance architecture
 - All 15 clusters migrated with **zero service disruption**
@@ -195,7 +200,7 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 
 **Scope:** 485 LIA application servers across 3 regions in account 820054669588
 
-**Actions:**
+⚡ **Actions:**
 - Analyzed fleet-wide storage: 485 servers uniformly provisioned at 500GB regardless of actual usage
 - Collected 30-day Datadog disk utilization metrics across all instances
 - Discovered massive overprovisioning: 59% wasted capacity (142 TB free out of 239.8 TB provisioned)
@@ -210,7 +215,7 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 - Executed volume modifications in 3 phases: high-impact first, then medium, then high-usage instances
 - Monitored CloudWatch disk space metrics post-optimization (70% warn, 85% critical thresholds)
 
-**Results:**
+✅ **Results:**
 - **$122K annual savings** (50% reduction from $245K to $122K)
 - Reduced fleet storage from 239.8TB to ~122TB provisioned
 - Maintained >100GB free space on all instances with **zero application issues**
@@ -223,7 +228,7 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 
 **Scope:** 7 self-managed Cassandra clusters (5 Marketing + 2 Communities Analytics)
 
-**Actions:**
+⚡ **Actions:**
 - Identified severe storage inefficiency in initial analysis: stream_items table with 10,017 SSTables causing 4.6x space amplification (8.5TB disk for 1.85TB live data)
 - Built Python automation script with SSH connectivity to collect `nodetool cfstats` metrics from all 7 clusters
 - Analyzed cluster-wide storage: discovered tables with >100GB waste threshold using inefficient Size-Tiered Compaction Strategy (STCS)
@@ -233,7 +238,7 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 - Created Change Requests for DTCS migration on high-impact tables showing 5-16x storage bloat
 - Coordinated with DBA teams for phased production rollout across Marketing and Communities clusters
 
-**Results:**
+✅ **Results:**
 - Eliminated **5-16x storage bloat** across affected tables through DTCS compaction
 - Enabled **node reduction** across 7 clusters by reclaiming wasted capacity
 - Improved read performance by reducing excessive SSTable counts
@@ -246,7 +251,7 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 
 **Scope:** 3 accounts with $380K annual NAT Gateway costs (Care Production: $193K, Community Production: $79K, Care Development: $35K)
 
-**Actions:**
+⚡ **Actions:**
 - Identified optimization opportunity: $380K annual NAT Gateway costs across 3 accounts and multiple regions
 - Enabled VPC Flow Logs on VPCs with high-cost NAT Gateways, configured S3 storage with Parquet format for optimal Athena performance
 - Created Athena database and external table using AWS-provided VPC Flow Logs DDL templates
@@ -260,7 +265,7 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 - Created detailed Change Requests with expected savings, implementation steps, security group configurations, and rollback procedures
 - Planned deployment order: Care Development first for validation, then production accounts
 
-**Results:**
+✅ **Results:**
 - **$100K+ annual savings target** (30-50% reduction from $380K)
 - Deployed gateway endpoints (S3, DynamoDB) with zero additional cost
 - Identified high-ROI interface endpoints based on actual traffic analysis
@@ -280,14 +285,14 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 - Analyzed >100GB waste threshold tables with inefficient Size-Tiered Compaction Strategy (STCS)
 - Migrated bloated tables to DateTieredCompactionStrategy (DTCS) optimized for time-series data
 - Example impact: audit_log table 5.88TB → 12.26GB (99.8% bloat reduction), stream_items 9,922 SSTables
-- **Result:** Eliminated 5-16x storage bloat, enabled node reduction across all 7 clusters
+- ✅ **Result:** Eliminated 5-16x storage bloat, enabled node reduction across all 7 clusters
 
 **Marketing Cassandra Node Reduction:**
 - Created automated Python analysis script for 5 Marketing Cassandra clusters
 - Analyzed 30-day P99.5 CPU metrics via CloudWatch and NVMe storage utilization via SSH
 - Generated 8 Change Requests (5 initial rounds + 3 Round2) for safe node removal
 - Maintained thresholds: 80% CPU utilization, 45% storage (allowing 50% for compaction spikes)
-- **Result:** Reduced EC2 node count while preserving cluster stability and performance
+- ✅ **Result:** Reduced EC2 node count while preserving cluster stability and performance
 
 **Elasticsearch Indices Optimization:**
 - Built comprehensive automation scripts for orphan detection, deleted doc expunge, and shard optimization
@@ -296,7 +301,7 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 - Orphan cleanup: removed indices from decommissioned customers
 - Document expunge: forced merge for indices with >10% deleted documents
 - Shard optimization: targeted 20-40GB per shard (AWS best practice)
-- **Result:** Reduced storage costs, improved query performance across clusters
+- ✅ **Result:** Reduced storage costs, improved query performance across clusters
 
 ### **Compute & Container Optimization**
 
@@ -305,14 +310,14 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 - Evaluated CPU vs memory utilization ratios to determine r6a (memory-optimized) or t3a (burstable) migration
 - Assessed bin packing efficiency and task co-location opportunities with 2xlarge instance sizing
 - Performed EC2 vs Fargate cost comparison using Convertible RI 3yr and Compute Savings Plans analysis
-- **Result:** Improved resource utilization, optimized instance type selections, documented Fargate ROI
+- ✅ **Result:** Improved resource utilization, optimized instance type selections, documented Fargate ROI
 
 **EA Community Node Reduction:**
 - Analyzed 8-node c7a.8xlarge EA community cluster using P99 CPU metrics over 30-day period
 - Created 3-wave phased reduction plan: 1 node per wave, 96 hours apart
 - Generated Change Requests for node removal + rightsizing to c8a.4xlarge/c8a.8xlarge
 - Maintained <80% CPU utilization threshold throughout reduction process
-- **Result:** Reduced node count while preserving performance SLAs
+- ✅ **Result:** Reduced node count while preserving performance SLAs
 
 ### **Resource Cleanup**
 
@@ -321,14 +326,14 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 - Built Python/Boto3 automation to query target group health status across 2 accounts and 3 regions
 - Categorized: Phase 1 (no healthy targets - immediate removal) vs Phase 2 (healthy targets - validation required)
 - Created Change Requests: 44 ELBs in Care Production, 46 in Care Development
-- **Result:** $14,830 annual savings, eliminated abandoned monitoring and application infrastructure
+- ✅ **Result:** $14,830 annual savings, eliminated abandoned monitoring and application infrastructure
 
 **EBS Snapshot Cleanup:**
 - Built Python script to discover orphaned snapshots across 14 AWS accounts and multiple regions
 - Applied criteria: not linked to AMI, not AWS Backup managed, not archived, not locked, older than 90 days
 - Identified patterns: lia-ppod* snapshots from EC2 MySQL to RDS migrations
 - Generated automated deletion Change Requests for all 14 accounts
-- **Result:** Reduced snapshot storage costs, improved infrastructure hygiene
+- ✅ **Result:** Reduced snapshot storage costs, improved infrastructure hygiene
 
 ### **Investigation & Reliability Projects**
 
@@ -337,26 +342,26 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 - Analyzed INSERT/SELECT/DELETE polling pattern generating 3 database I/O operations per message
 - Estimated 4.8M+ monthly I/O operations from queue polling overhead
 - Evaluated SQS migration viability with cost-benefit analysis
-- **Result:** Documented architectural anti-pattern, provided migration recommendations (Option 1: Batch Queries prioritized)
+- ✅ **Result:** Documented architectural anti-pattern, provided migration recommendations (Option 1: Batch Queries prioritized)
 
 **Serverless Failover Investigation ($47K investigated):**
 - Investigated 19 Aurora Serverless v2 failover instances for suspected connection pool misconfiguration
 - Hypothesis: sql.pool.maxActive=100 too low, causing failovers to serverless readers
 - Analyzed CloudWatch metrics, application logs, and RDS Performance Insights
-- **Result:** Hypothesis rejected - traffic was deliberate reader endpoint usage by applications, not pool exhaustion issue
+- ✅ **Result:** Hypothesis rejected - traffic was deliberate reader endpoint usage by applications, not pool exhaustion issue
 
 **Java Backend Profiling (EA Aurora):**
 - Researched profiling options for JDK 8 Community backend services
 - Evaluated tools: Datadog Java APM, JMX/VisualVM, async-profiler (recommended for JDK 8)
 - Created Change Requests for Datadog Java APM integration + async-profiler deployment
 - Target: EA Aurora backend (high-traffic environment) for maximum optimization impact
-- **Result:** Established profiling capability to identify CPU hotspots, memory leaks, and JVM tuning opportunities
+- ✅ **Result:** Established profiling capability to identify CPU hotspots, memory leaks, and JVM tuning opportunities
 
 **Hardcoded ElastiCache Endpoints (AURORA-871):**
 - Addressed production incident: hardcoded Redis endpoints caused outages when replicas removed
 - Scanned repositories for hardcoded ElastiCache endpoints using automation scripts
 - Replaced hardcoded values with SSM Parameter Store dynamic lookups
-- **Result:** Prevented future outages, resolved eng-maintenance-16344 and AURORA-871 incidents
+- ✅ **Result:** Prevented future outages, resolved eng-maintenance-16344 and AURORA-871 incidents
 
 **Digest Queue Backlog Investigation:**
 - Discovered 5.73M message backlog across 3 communities during database-as-queue analysis
@@ -368,11 +373,11 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 - Analyzed LIA search system generating 200-1000 database queries per search page
 - Pattern: Elasticsearch returns message IDs only, then 10-50 DB queries per result for hydration
 - Investigated optimization: Option 1 (Batch Queries - reduce to 5-10 queries), Option 2 (Redis caching), Option 3 (Elasticsearch denormalization)
-- **Result:** Documented batch query optimization strategy as most feasible approach
+- ✅ **Result:** Documented batch query optimization strategy as most feasible approach
 
 </details>
 
-**Overall Project Results:**
+🏆 **Overall Project Results:**
 - Achieved **$358K+ annual savings** across 44 AWS accounts:
   - **$220K/year** (50%) from EMR modernization (15 clusters)
   - **$122K/year** (50%) from EBS rightsizing (485 servers)
@@ -383,22 +388,37 @@ Analyze infrastructure utilization patterns and implement data-driven optimizati
 - Built reusable Python automation framework integrating CloudWatch, Cost Explorer, Datadog API, VPC Flow Logs, and Athena
 - Established data-driven optimization methodologies for ongoing cost management
 
-**Technologies:** AWS (EC2, EBS, EMR, ECS, ELB, VPC, NAT Gateway, CloudWatch, Cost Explorer, Athena, VPC Flow Logs), Python, Boto3, Pandas, Datadog, Spark, YARN, Terraform, Cassandra, Elasticsearch, Parquet, SSH/Paramiko, Bash
+🛠️ **Technologies:** AWS (EC2, EBS, EMR, ECS, ELB, VPC, NAT Gateway, CloudWatch, Cost Explorer, Athena, VPC Flow Logs), Python, Boto3, Pandas, Datadog, Spark, YARN, Terraform, Cassandra, Elasticsearch, Parquet, SSH/Paramiko, Bash
 
 ---
 
-### Software Developer | JPMorgan Chase & Co (Contractor - Remote)
+### 🏦 Software Developer | JPMorgan Chase & Co (Contractor - Remote)
 **March 2023 - March 2025**
 
-#### PROJECT: Legacy Fintech Application Modernization
+#### 🔄 PROJECT: Legacy Fintech Application Modernization
 
-**Situation:**
+📋 **Situation:**
 JPMorgan Chase's PortfolioOne application (buy-side trading platform) was running on outdated .NET Framework 4.5.2 with WCF services, creating security vulnerabilities, performance bottlenecks, and maintenance challenges. The application served institutional traders requiring high availability and millisecond-level responsiveness.
 
-**Task:**
+🎯 **Task:**
 Modernize 150+ backend services to .NET 8, migrate 45+ WCF services to Web API, implement enterprise SSO, and replace synchronous communication patterns with event-driven architecture—all while maintaining zero downtime for trading operations.
 
-**Actions:**
+```mermaid
+graph LR
+    subgraph Before["🔴 .NET Framework 4.5.2"]
+        WCF["WCF Services"]
+        Sync["Synchronous Duplex"]
+        Auth["Basic Auth"]
+    end
+    subgraph After["🟢 .NET 8"]
+        API["Web API + MessagePack"]
+        Kafka["Apache Kafka Events"]
+        SSO["PingFederate + Entra ID"]
+    end
+    Before -->|"Python Automation — 150+ Services"| After
+```
+
+⚡ **Actions:**
 - **Framework Upgrade:** Built custom Python automation tools to upgrade 150+ services from .NET Framework 4.5.2 to .NET 8, reducing manual effort by 80%
 - **API Modernization:** Created Python automation scripts to convert 45+ WCF services to ASP.NET Web API with MessagePack serialization
 - **Multi-Targeting Strategy:** Implemented multi-targeting projects enabling rollback capability for zero-risk deployments
@@ -407,7 +427,7 @@ Modernize 150+ backend services to .NET 8, migrate 45+ WCF services to Web API, 
 - **Enterprise Security:** Integrated PingFederate and Azure Entra ID for SSO with RBAC, ensuring secure access for institutional users
 - **CI/CD Pipeline:** Built and maintained TeamCity pipelines for multi-targeting .NET projects with comprehensive unit and regression testing
 
-**Result:**
+✅ **Result:**
 - Successfully modernized **150+ backend services** to .NET 8
 - Improved API performance by **58%** through MessagePack serialization
 - Achieved **zero downtime** during migrations with rollback-safe architecture
@@ -415,22 +435,22 @@ Modernize 150+ backend services to .NET 8, migrate 45+ WCF services to Web API, 
 - Reduced UI latency during high-volume trading through async patterns
 - Strengthened security posture with enterprise SSO and RBAC implementation
 
-**Technologies:** .NET 8, .NET Framework, C#, ASP.NET Core, Web API, WCF, Python, Apache Kafka, MessagePack, PingFederate, Azure Entra ID, TeamCity, SQL Server, OAuth 2.0, JWT, RBAC
+🛠️ **Technologies:** .NET 8, .NET Framework, C#, ASP.NET Core, Web API, WCF, Python, Apache Kafka, MessagePack, PingFederate, Azure Entra ID, TeamCity, SQL Server, OAuth 2.0, JWT, RBAC
 
 ---
 
-### Senior Technical Content Engineer | Educative (Full Time - Lahore, Pakistan)
+### 📚 Senior Technical Content Engineer | Educative (Lahore, Pakistan)
 **January 2022 - June 2023**
 
-#### PROJECT: Interactive Programming Platform & Cloud Labs
+#### 🎓 PROJECT: Interactive Programming Platform & Cloud Labs
 
-**Situation:**
+📋 **Situation:**
 Educative, an interactive learning platform, needed to scale its content offerings with hands-on programming projects and browser-based development environments to support thousands of learners preparing for FAANG interviews and learning modern technology stacks.
 
-**Task:**
+🎯 **Task:**
 Create top-selling interactive programming projects covering software engineering fundamentals and build Docker-based cloud labs enabling browser-based coding environments for 10+ technology stacks.
 
-**Actions:**
+⚡ **Actions:**
 - **Content Development:** Created 15+ top-selling interactive programming projects covering OOP/OOD, algorithms, and design patterns in C#, Java, Python, and C++
 - **Lab Creation:** Designed hands-on labs for FAANG interview preparation including:
   - Streaming/message brokers (Kafka)
@@ -446,56 +466,66 @@ Create top-selling interactive programming projects covering software engineerin
 - **Platform Enhancement:** Contributed to test automation and CI/CD pipeline improvements for content delivery infrastructure
 - **CI/CD Automation:** Engineered user-friendly pipeline using Kubernetes and DigitalOcean for automated GitHub repo checkout, Docker image builds, and lab deployments
 
-**Result:**
+✅ **Result:**
 - Created **15+ top-selling courses** adopted by thousands of learners
 - Successfully Dockerized **10+ technology stacks** streamlining development workflows
 - Enabled browser-based coding environments eliminating local setup complexity
 - Contributed to platform growth with modernized features aligned with industry demands
 - Built comprehensive FAANG interview preparation content for Kafka, APIs, microservices, and distributed systems
 
-**Technologies:** Docker, Kubernetes, Python, C#, Java, .NET, Django, Flask, FastAPI, React, MERN/MEAN Stack, MongoDB, Kafka, CI/CD, DigitalOcean, Git
+🛠️ **Technologies:** Docker, Kubernetes, Python, C#, Java, .NET, Django, Flask, FastAPI, React, MERN/MEAN Stack, MongoDB, Kafka, CI/CD, DigitalOcean, Git
 
 ---
 
-### Engineer | Tricon Boston Consulting Corporation Pvt. Ltd. (Full Time - Jhimpir, Pakistan)
+### ⚡ Engineer | Tricon Boston Consulting (Jhimpir, Pakistan)
 **December 2020 - January 2022**
 
-#### PROJECT: Wind Turbine Performance Optimization & Predictive Maintenance
+#### 🌬️ PROJECT: Wind Turbine Performance Optimization & Predictive Maintenance
 
-**Situation:**
+📋 **Situation:**
 Wind farm with 120 turbines in Pakistan's Jhimpir wind corridor needed to maximize electricity generation, minimize downtime, and optimize maintenance scheduling to improve operational efficiency and ROI.
 
-**Task:**
+🎯 **Task:**
 Develop predictive maintenance models for early fault detection, analyze vortex generator impact on performance, and create real-time monitoring dashboard for government oversight.
 
-**Actions:**
+⚡ **Actions:**
 - **Predictive Modeling:** Built MATLAB and Python simulation models analyzing wind turbine conditions for early fault detection and maintenance scheduling
 - **Performance Analysis:** Analyzed vortex generator impact on electricity generation using historical and predictive wind data models
 - **Data Analysis:** Conducted data analysis on daily, monthly, and yearly intervals to uncover operational insights
 - **Monitoring Dashboard:** Created real-time UI using .NET and JavaScript providing live generation updates for government monitoring, enabling data-driven operational decisions
 
-**Result:**
+✅ **Result:**
 - Reduced wind turbine **downtime and maintenance costs** through early fault detection
 - Optimized electricity generation through data-driven vortex generator recommendations
 - Enabled efficient government monitoring with real-time generation updates
 - Improved operational efficiency across **120 turbines**
 
-**Technologies:** Python, MATLAB, .NET, JavaScript, data analysis, simulation modeling, UI development
+🛠️ **Technologies:** Python, MATLAB, .NET, JavaScript, data analysis, simulation modeling, UI development
 
 ---
 
-## Independent Projects
+## 🚀 Independent Projects
 
-### AI-Assisted Bank Reconciliation System
+### 🏦 AI-Assisted Bank Reconciliation System
 **2025**
 
-**Situation:**
+📋 **Situation:**
 Bookkeeping company managing trucking companies needed automated solution to process PDF bank statements from multiple banks, categorize transactions, and export reconciled data—a process taking hours of manual work per client.
 
-**Task:**
+🎯 **Task:**
 Build AI-powered bank reconciliation tool automating PDF ingestion, OCR extraction, intelligent transaction categorization, and CSV/Excel export generation.
 
-**Actions:**
+```mermaid
+graph LR
+    PDF["📄 PDF Statements"] --> OCR["OCR Extraction"]
+    OCR --> LLM["🤖 Gemini + LangChain"]
+    GL["📋 GL / Chart of Accounts"] --> Vec["Pinecone + HuggingFace"]
+    Vec --> LLM
+    LLM --> Cat["Transaction Categorization"]
+    Cat --> Export["📊 CSV / Excel"]
+```
+
+⚡ **Actions:**
 - **Document Processing:** Built PDF ingestion system with OCR extraction for multiple bank statement formats
 - **AI Categorization:** Implemented transaction categorization using Gemini LLM with LangChain framework
 - **Vector Search:** Integrated Pinecone vector database with HuggingFace embeddings for client-specific GL/Chart of Accounts context
@@ -503,26 +533,38 @@ Build AI-powered bank reconciliation tool automating PDF ingestion, OCR extracti
 - **Performance Optimization:** Implemented async batching with concurrency limits, structured logging, health endpoints, and CSV-safe sanitization
 - **Production Deployment:** Deployed on AWS using Docker (pre-downloaded embedding models), NGINX reverse proxy (CORS + timeout handling), CloudWatch logging, and GitHub Actions CI/CD
 
-**Result:**
+✅ **Result:**
 - Automated hours of manual reconciliation work per client
 - Enabled accurate transaction categorization using client-specific accounting context
 - Delivered production-ready system with comprehensive logging and monitoring
 - Reduced cold starts through optimized Docker image with embedded models
 
-**Technologies:** Python, FastAPI, React, Gemini LLM, LangChain, Pinecone, HuggingFace, AWS, Docker, NGINX, CloudWatch, GitHub Actions, OCR
+🛠️ **Technologies:** Python, FastAPI, React, Gemini LLM, LangChain, Pinecone, HuggingFace, AWS, Docker, NGINX, CloudWatch, GitHub Actions, OCR
 
 ---
 
-### IFTA DriverPacket Processing System
+### 🚛 IFTA DriverPacket Processing System
 **2025**
 
-**Situation:**
+📋 **Situation:**
 Trucking companies needed to convert driver packet images and route CSVs into structured IFTA reports for state-by-state fuel tax compliance—a manual, error-prone process taking days per filing.
 
-**Task:**
+🎯 **Task:**
 Build AI-powered pipeline automating driver packet OCR, route processing, GIS-based mileage calculation, and jurisdiction-ready IFTA export generation.
 
-**Actions:**
+```mermaid
+graph LR
+    Img["📸 Driver Packets"] --> OCR["Gemini OCR"]
+    CSV["📄 Route CSVs"] --> HERE["HERE Maps API"]
+    OCR --> Proc["Data Processing"]
+    HERE --> GIS["GIS State Mileage"]
+    Proc --> Gen["IFTA Report Generator"]
+    GIS --> Gen
+    Gen --> CA["CA CDTFA-5235"]
+    Gen --> TX["TX X12 813"]
+```
+
+⚡ **Actions:**
 - **Document Intelligence:** Implemented driver packet image processing using Gemini OCR for data extraction
 - **Route Processing:** Integrated HERE Maps routing and geocoding APIs for accurate trip reconstruction
 - **GIS Analysis:** Built GIS-based state-by-state mileage calculation with jurisdiction boundary detection
@@ -534,186 +576,16 @@ Build AI-powered pipeline automating driver packet OCR, route processing, GIS-ba
 - **Storage & Security:** Integrated AWS S3 for document storage with pre-signed download URLs
 - **Production Deployment:** Productionized with Docker, GitHub Actions CI (tests/lint/security), automated EC2 deployment
 
-**Result:**
+✅ **Result:**
 - Automated multi-day manual IFTA filing process to minutes
 - Eliminated human errors in mileage calculation and state jurisdiction determination
 - Generated jurisdiction-ready exports for California and Texas IFTA filing
 - Delivered production-ready system with comprehensive testing and security scanning
 
-**Technologies:** Python, FastAPI, Gemini OCR, HERE Maps API, GIS, AWS S3, Docker, GitHub Actions, EC2, geocoding, routing APIs
+🛠️ **Technologies:** Python, FastAPI, Gemini OCR, HERE Maps API, GIS, AWS S3, Docker, GitHub Actions, EC2, geocoding, routing APIs
 
 ---
 
-## Technical Skills
+🔒 *Enterprise projects describe architecture, patterns, and outcomes — not proprietary code. Independent projects have full source on GitHub.*
 
-### Programming Languages
-C# | Python | JavaScript/TypeScript | Java | SQL
-
-### Backend Frameworks & Technologies
-.NET 8 | .NET Framework | ASP.NET Core | Web API | WCF | FastAPI | Django | Flask | Node.js | Express.js | Spring Framework | microservices | distributed systems
-
-### Cloud Platforms
-**AWS:** EC2, ECS, EMR, Lambda, RDS/Aurora, ElastiCache, S3, EBS, VPC, ALB/NLB, NAT Gateway, VPC Endpoints, CloudWatch, Cost Explorer, Athena, IAM, SSM Parameter Store, AWS Backup  
-**Azure:** Virtual Machines, App Service, Entra ID, Azure DevOps
-
-### Databases & Data Stores
-**Relational:** MySQL, SQL Server, Aurora, PostgreSQL  
-**NoSQL:** Cassandra, MongoDB, Redis  
-**Search:** Elasticsearch
-
-### Message Queues & Event Streaming
-Apache Kafka | RabbitMQ | AWS SQS | Bull
-
-### DevOps & CI/CD
-Docker | Kubernetes | Terraform | Jenkins | CircleCI | TeamCity | GitHub Actions | Git | Helm | Datadog | New Relic | Prometheus | Grafana | ELK Stack
-
-### Frontend Technologies
-React | Next.js | Angular | TypeScript | HTML/CSS | Bootstrap
-
-### Security & Authentication
-OAuth 2.0 | JWT | RBAC | SSO | PingFederate | Okta | Azure Entra ID
-
-### AI-First Engineering
-Cursor | Windsurf | Claude Code | Claude | MCP | Agentic workflows | LLMs | Prompt engineering | LangChain | Pinecone | HuggingFace
-
-### Build Tools
-Maven | Gradle | npm | Webpack | Babel | pip
-
-### Testing Frameworks
-JUnit | Jest | Mocha | Selenium | Pytest
-
----
-
-## Certifications & Professional Development
-
-### Professional Certifications
-
-**AI & Machine Learning**
-- Intro to Generative AI (Google)
-
-**Data Science & Analytics**
-- Databases and SQL for Data Science with Python (IBM)
-- Foundations: Data, Data, Everywhere (Google Data Analytics)
-- Ask Questions to Make Data-Driven Decisions (Google Data Analytics)
-
-**Programming Languages**
-- Python Basic (University of Michigan)
-- Python Classes and Inheritance (University of Michigan)
-- Python Functions, Files, and Dictionaries (University of Michigan)
-
-**Engineering & Automation**
-- Certified LabVIEW Associate Developer (National Instruments)
-- LabVIEW Core 1 (National Instruments)
-- LabVIEW Core 2 (National Instruments)
-- LabVIEW Core 3 (National Instruments)
-- LabVIEW FPGA (National Instruments)
-- LabVIEW Channel Wire Communication (National Instruments)
-- MATLAB Onramp (MathWorks)
-- Simulink Onramp (MathWorks)
-
-**Other Technical Skills**
-- Electric Power Systems
-- Everyday Excel, Part 3 (Projects)
-- Increase SEO Traffic with WordPress
-- Video Editing
-
-**Professional Development**
-- SUPARCO Training Program
-- First Aid Certification
-
-### University Leadership & Activities
-
-**Institute of Electrical and Electronics Engineers (IEEE)**
-- Speaker at IEEE Webinar
-
-**Institution of Engineering and Technology (IET) - UET Chapter**
-- Senior Executive
-- Vice Head
-- IET PATW Participant
-
-**Extracurricular Leadership**
-- Sports Week Head at UET
-- Project Exhibition Participant
-
----
-
-## Education
-
-**University of Engineering and Technology Lahore**  
-B.Sc., Electrical Engineering  
-**CGPA:** 3.5/4.0  
-**2016 - 2020**
-
-### Final Year Project: PV Module Testing Machine & I-V Curve Tracer
-
-**Situation:**
-Pakistan's renewable energy sector faced significant challenges with complete dependence on imported PV module testing equipment, creating economic burden and hindering local solar industry development. Testing labs required cost-effective, standards-compliant solutions to analyze photovoltaic module health and performance.
-
-**Task:**
-Design and develop a cost-efficient, user-friendly PV module testing machine that traces I-V curves and determines performance parameters according to international standards (IEC 61215 - STC and PVUSA - PTC), enabling local manufacturing and promoting renewable energy adoption in Pakistan.
-
-**Actions:**
-- **Circuit Design & Simulation:** Designed capacitive load method circuit for I-V curve tracing using MATLAB-Simulink, optimizing capacitance values (10,000-15,000 µF) for accurate measurement
-- **Hardware Development:** Built custom PCB using Proteus 8 Professional integrating:
-  - NI MyRIO (dual-core processor + FPGA) for data acquisition
-  - Current and voltage sensors for I-V measurements
-  - LM35 temperature sensors for cell and ambient temperature
-  - Photodiode irradiance sensor for light intensity measurement
-  - Relay modules for switching control
-  - Capacitor bank for I-V curve generation
-- **Mechanical Design:** Developed two-structure system:
-  - Main structure with DC motors for North-South and East-West PV module positioning (air mass ratio calibration)
-  - Secondary structure with stepper motors for light source vertical/horizontal movement (irradiance control)
-- **Standards Compliance:** Implemented STC (1000 W/m², 25°C, AM 1.5) and PTC (800 W/m², 47°C cell, 20°C ambient) testing conditions
-- **Software Development:** Created LabVIEW-based GUI for:
-  - Real-time I-V and P-V curve plotting
-  - Performance parameter calculation (Voc, Isc, Pmax, Vmax, Imax, Fill Factor, Efficiency)
-  - Shunt and series resistance analysis
-  - Monthly and annual energy production forecasting
-  - Automated testing workflow with relay control
-- **Algorithm Implementation:** Programmed FPGA for high-speed sensor data acquisition and dual-core processor for motor control and circuit switching
-- **Testing & Validation:** Validated against research benchmarks, achieving comparable charging times with simulation results
-
-**Result:**
-- Successfully designed and implemented cost-effective PV testing machine eliminating import dependency
-- Achieved IEC 61215 and PVUSA standards compliance for accurate STC and PTC measurements
-- Enabled automated I-V curve tracing with comprehensive performance analysis (Voc, Isc, Pmax, FF, efficiency, Rs, Rsh)
-- Implemented annual energy production forecasting capability using monthly irradiance and temperature data
-- Contributed to promotion of renewable energy industry in Pakistan through local manufacturing capability
-- Led 4-member team through 6-month development cycle covering simulation, PCB design, mechanical fabrication, and software integration
-
-**Technologies:** MATLAB-Simulink, LabVIEW, NI MyRIO (FPGA + ARM processor), Proteus 8, PCB design, embedded systems, sensors (LM35, photodiode), DC motors, stepper motors, relay control, capacitive circuits, data acquisition systems
-
----
-
-## Key Achievements Summary
-
-- **$358K+ annual AWS cost savings** through data-driven infrastructure optimization across 44 accounts
-- **150+ backend services** modernized from .NET Framework to .NET 8 with zero downtime
-- **375 repositories** standardized and integrated post-acquisition with 60% reduction in deployment errors
-- **Multi-TB distributed database** cleanup maintaining 100% uptime across MySQL/Aurora, Cassandra, Elasticsearch
-- **58% API performance improvement** through architectural modernization and serialization optimization
-- **80% reduction** in manual upgrade effort through Python automation
-- **15+ top-selling courses** created helping thousands of developers
-- **4 weeks to 1 week** reduction in engineer onboarding time through documentation and standardization
-
----
-
-## Portfolio Notes
-
-**NDA & Confidentiality:**  
-Due to non-disclosure agreements with enterprise clients, this portfolio focuses on technical approaches, architectural patterns, and quantifiable business outcomes rather than proprietary code or confidential business logic. All project descriptions represent actual work delivered in production environments.
-
-**Code Samples:**  
-While enterprise code cannot be shared, GitHub profile contains independent projects demonstrating:
-- Python automation and scripting
-- API development and microservices
-- Cloud infrastructure and DevOps
-- AI/ML integration and LLM workflows
-
-**References:**  
-Professional references available upon request from previous employers and clients.
-
----
-
-*Last Updated: February 2026*
+*Last updated: February 2026*
